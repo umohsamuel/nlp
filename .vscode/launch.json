@@ -5,11 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python Debugger: Python File",
+      "name": "Run any Python File as module",
       // "type": "debugpy",
       "type": "python",
       "request": "launch",
-      "module": "task3.${fileBasenameNoExtension}",
+      // "module": "task3.${fileBasenameNoExtension}",
+      "module": "${relativeFileDirname}.${fileBasenameNoExtension}",
       // "program": "${file}",
       "cwd": "${workspaceFolder}"
     }

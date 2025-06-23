@@ -1,12 +1,11 @@
 import re
 
-from lib.examples import efik_examples
+from lib.examples import yoruba_examples
 
 print("\n=== (iii.) ===\n")
 
 
-def test_efik_pattern(pattern_info):
-    """Test Efik language patterns"""
+def test_yoruba_pattern(pattern_info):
     pattern = pattern_info['pattern']
     description = pattern_info['description']
     test_words = pattern_info['test_words']
@@ -23,6 +22,6 @@ def test_efik_pattern(pattern_info):
     print()
 
 
-for i, example in enumerate(efik_examples, 1):
+for i, example in enumerate(yoruba_examples, 1):
     print(f"Example {i}:")
-    test_efik_pattern(example)
+    test_yoruba_pattern(example)

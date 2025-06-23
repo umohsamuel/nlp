@@ -1,7 +1,6 @@
 import re
 
 def test_regex(pattern, test_strings, description):
-    """Helper function to test regex patterns"""
     print(f"Pattern: {pattern}")
     print(f"Description: {description}")
     compiled_pattern = re.compile(pattern)
